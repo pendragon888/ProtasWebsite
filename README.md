@@ -53,7 +53,11 @@ Steps on how to install dependencies and execute the tests.
 
 ## Areas of Interest / Suggested Improvements
 
-### Type Search element
+### data-testid
+
+- Adding the 'data-testid' HTML attribute to uniquely identified elements in the UI would contribute towards the reliability, maintainance, stability and scalability of the automated tests.
+
+### Typo on Search element
 
 - The mouseover/title for Search is missing the letter 'r'
 

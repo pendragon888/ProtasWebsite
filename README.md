@@ -6,12 +6,9 @@ This Playwright automation test framework uses TypeScript to automate [Protas](h
 - Develop Playwright automation framework using TypeScript.
 - Demonstrate use of POM (Page Object Model) to show readable, maintainable and scalable code.
 - Create UI tests to verify core webpages are present and functional.
-- Create API tests to verify status, save payload and compare against UI.
-- Initialise setup tests to run first, confirming environment is ready before running remaining automation tests.
 - Perform tests against a variety of web browsers and mobile viewports.
 - Integrate CI/CD workflow using GitHub Actions.
-- Raise areas of website improvements.
-- Development timeboxed to one working week.
+
 
 ## Setup Instructions
 

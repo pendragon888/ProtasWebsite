@@ -65,6 +65,15 @@ Steps on how to install dependencies and execute the tests.
 
 ![SearchType](/README_images/Search_mouseover_and_title_typo.jpg)
 
+### Broken video player (Cantata search)
+
+- When searching for the keyword 'Cantata', the [top result](https://protas.co.uk/cantata-2/?hilite=cantata) displays a page with an unplayable video.
+
+![CantataSearchResult](/README_images/Search_Cantata.jpg)
+
+![UnplayableVideo](/README_images/Search_Cantata_broken_video.jpg)
+
+
 
 ### Missing alt-text from images
 - A few alt-text descriptions to images are missing such as on the Protas team image on 'Our people' webpage. Adding this would help towards accessibility compliance.

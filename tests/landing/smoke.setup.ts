@@ -1,0 +1,27 @@
+import { test as setup, expect } from '@fixtures/pages.fixture'
+
+setup.describe('Smoke test web application', async () => {
+    setup('Verify each page can be accessed', async ({ landingPage, whatWeDoPage, cantataPage, ourPeoplePage, newsAndInsightsPage, workAtProtasPage, getInTouchPage, page }) => {
+        await landingPage.goto()
+        await expect(page).toHaveTitle('Protas - Smarter trials for better health')
+        await expect (landingPage.homeBannerHeading).toBeVisible()
+        await whatWeDoPage.goto()
+        await expect(page).toHaveTitle('Clinical Trial Strategy, Design and Technology - Protas')
+        await expect(whatWeDoPage.headerModuleContent).toBeVisible()
+        await cantataPage.goto()
+        await expect(page).toHaveTitle('Cantata Clinical Trial Technology Platform - Protas')
+        await expect(cantataPage.headerModuleHeading).toBeVisible()
+        await ourPeoplePage.goto()
+        await expect(page).toHaveTitle('Clinical Trial and Technology Experts - Protas')
+        await expect(ourPeoplePage.headerModuleHeading).toBeVisible()
+        await newsAndInsightsPage.goto()
+        await expect(page).toHaveTitle('Clinical Trial News, Insights and Results - Protas')
+        await expect(newsAndInsightsPage.headerModuleHeading).toBeVisible()
+        await workAtProtasPage.goto()
+        await expect(page).toHaveTitle('Careers In Clinical Trials and Technology - Protas')
+        await expect(workAtProtasPage.headerModuleHeading).toBeVisible()
+        await getInTouchPage.goto()
+        await expect(page).toHaveTitle('Clinical Trial Consultancy & Technology Enquiries - Protas')
+        await expect(getInTouchPage.headerModuleHeading).toBeVisible()
+    })
+})

@@ -8,6 +8,8 @@ This Playwright automation test framework uses TypeScript to automate [Protas](h
 - Create UI tests to verify core webpages are present and functional.
 - Perform tests against a variety of web browsers and mobile viewports.
 - Integrate CI/CD workflow using GitHub Actions.
+- Raise areas of website improvements.
+- Development timeboxed to one working week.
 
 
 ## Setup Instructions

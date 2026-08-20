@@ -51,6 +51,13 @@ Steps on how to install dependencies and execute the tests.
     npx playwright test getInTouch.spec.ts
     ```
 
+## Areas of Interest / Suggested Improvements
+
+### Type Search element
+
+- The mouseover/title for Search is missing the letter 'r'
+
+![SearchType](/README_images/Search_mouseover_and_title_typo.jpg)
 
 
 ## Testing Framework Developed By

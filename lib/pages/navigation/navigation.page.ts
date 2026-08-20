@@ -12,6 +12,10 @@ export class NavigationPage {
     readonly navToSearch: Locator
     readonly navToGetInTouch: Locator
 
+    // Search
+    readonly navSearchTextbox: Locator
+    readonly navSearchButton
+
     constructor(page: Page) {
         this.page = page
         this.pageTitle = page.getByTestId('page-title')
@@ -22,6 +26,8 @@ export class NavigationPage {
         this.navToNewsAndInsights = page.getByRole('link', { name: 'News & Insights' })
         this.navToWorkAtProtas = page.getByRole('link', { name: 'Work at Protas' })
         this.navToSearch = page.getByRole('link', { name: 'Seach' })
+        this.navSearchTextbox = page.getByRole('textbox', { name: 'Search by keyword' })
+        this.navSearchButton = page.getByRole('button', { name: 'Search' })
         this.navToGetInTouch = page.getByRole('link', { name: 'Get in touch' })
     }
 

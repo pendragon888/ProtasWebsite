@@ -6,6 +6,7 @@ import { OurPeoplePage } from "@pages/ourPeople/ourPeople.page";
 import { NewsAndInsightsPage } from "@pages/newsAndInsights/newsAndInsights.page";
 import { WorkAtProtasPage } from "@pages/workAtProtas/workAtProtas.page";
 import { GetInTouchPage } from "@pages/getInTouch/getInTouch.page";
+import { SearchPage } from "@pages/search/search.page";
 import { test as baseTest } from "@playwright/test";
 
 type MyPages = {
@@ -16,6 +17,7 @@ type MyPages = {
     ourPeoplePage: OurPeoplePage;
     newsAndInsightsPage: NewsAndInsightsPage;
     workAtProtasPage: WorkAtProtasPage;
+    searchPage: SearchPage;
     getInTouchPage: GetInTouchPage;
 };
 
@@ -40,6 +42,9 @@ export const test = baseTest.extend<MyPages>({
   },
     workAtProtasPage: async ({ page }, use) => {
     await use(new WorkAtProtasPage(page));
+  },
+    searchPage: async ({ page }, use) => {
+    await use(new SearchPage(page));
   },
     getInTouchPage: async ({ page }, use) => {
     await use(new GetInTouchPage(page));

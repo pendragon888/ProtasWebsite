@@ -66,6 +66,12 @@ Steps on how to install dependencies and execute the tests.
 ![SearchType](/README_images/Search_mouseover_and_title_typo.jpg)
 
 
+### Missing alt-text from images
+- A few alt-text descriptions to images are missing such as on the Protas team image on 'Our people' webpage. Adding this would help towards accessibility compliance.
+
+![MissingAltText](README_images/Missing_alt_text_team_image.jpg)
+
+
 ## Testing Framework Developed By
 
 **Kevin D**
